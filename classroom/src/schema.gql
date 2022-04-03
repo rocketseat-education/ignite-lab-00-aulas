@@ -2,6 +2,42 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Course {
+  id: ID!
+  title: String!
+  slug: String!
+}
+
+type Student {
+  id: ID!
+  enrollments: [Enrollment!]!
+}
+
+type Enrollment {
+  id: ID!
+  student: Student!
+  course: Course!
+  canceledAt: DateTime
+  createdAt: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
 type Query {
-  hello: String!
+  courses: [Course!]!
+  course(id: String!): Course!
+  enrollments: [Enrollment!]!
+  me: Student!
+  students: [Student!]!
+}
+
+type Mutation {
+  createCourse(data: CreateCourseInput!): Course!
+}
+
+input CreateCourseInput {
+  title: String!
 }
