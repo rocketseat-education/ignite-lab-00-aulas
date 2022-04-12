@@ -27,3 +27,11 @@
 
 - [Auth] Listar cursos que tenho acesso
 - [Auth] Acessar conteúdo do curso
+
+----------------------------------------------------------------
+
+[ ] Importar telas do Tailwind
+[ ] URL de Logout no Auth0
+[ ] Query das minhas matrículas
+[ ] Query de produtos
+[ ] Mutation de realizar matrícula
