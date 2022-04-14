@@ -1,0 +1,6 @@
+query GetProducts {
+  products {
+    id
+    title
+  }
+}
