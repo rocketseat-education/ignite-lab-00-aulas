@@ -1,0 +1,7 @@
+{
+  "eslint.workingDirectories": [
+    "classroom",
+    "purchases",
+    "web"
+  ]
+}
